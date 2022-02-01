@@ -1,0 +1,14 @@
+.box{
+    padding: 10px;
+    background-color: rgb(226, 231, 236);
+}
+
+.example-card{
+    height: 35rem;
+    box-shadow: 2px 1px 5px 3px rgba(117, 116, 116, 0.507);
+}
+
+.container-fluid{
+    background-color: rgba(206, 197, 197, 0.281);
+}
+

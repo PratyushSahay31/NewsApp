@@ -1,0 +1,35 @@
+<!-- <div class="container">
+    <div class="row">
+        <h1>Top Headings</h1>
+        <div *ngFor="let d of topHeadingDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{d.urlToImage}}" width="100%">
+                <h2>{{d.title}}</h2>
+                <p>{{d.description}}</p>
+                <a href="{{d.url}}" target="_blank"><button mat-raised-button color="primary" >Read More</button></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- mat card -->
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="mt-5" style="font-size:3rem;text-align:center">Top Headings Today</h1>
+        <div *ngFor="let d of topHeadingDisplay" class="col-lg-3 mt-4 mb-4">
+            <mat-card class="example-card">
+                <img mat-card-image src="{{d.urlToImage}}">
+                <mat-card-title>{{d.title}}</mat-card-title>
+                <mat-card-content>
+                    <p>
+                        {{d.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                </mat-card-actions>
+            </mat-card>
+            <a href="{{d.url}}"  target="_blank"><button mat-raised-button id="btn" color="primary">Read More</button></a>
+                
+        </div>
+    </div>
+</div>

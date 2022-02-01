@@ -1,0 +1,34 @@
+<!-- <div class="container">
+    <div class="row">
+        <h1>Technology</h1>
+        <div *ngFor="let d of techDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{d.urlToImage}}" width="100%">
+                <h2>{{d.title}}</h2>
+                <p>{{d.description}}</p>
+                <a href="{{d.url}}" target="_blank"><button mat-raised-button color="primary" >Read More</button></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="mt-5" style="font-size:3rem;text-align:center;">Top Tech Headings</h1>
+        <div *ngFor="let d of techDisplay" class="col-lg-3 mt-4 mb-4">
+            <mat-card class="example-card">
+                <img mat-card-image src="{{d.urlToImage}}">
+                <mat-card-title>{{d.title}}</mat-card-title>
+                <mat-card-content>
+                    <p>
+                        {{d.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a href="{{d.url}}"  target="_blank"><button mat-raised-button class="btn" color="primary">Read More</button></a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

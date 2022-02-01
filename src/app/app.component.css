@@ -1,0 +1,11 @@
+.nav-link{
+    font-size: 1.3rem;
+}
+
+.nav-item>a:hover{
+    color:red;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
